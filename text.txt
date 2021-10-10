@@ -1,0 +1,15 @@
+
+Custom config module
+https://docs.nestjs.com/techniques/configuration#custom-configuration-files
+
+Configuration namespaces
+https://docs.nestjs.com/techniques/configuration#configuration-namespaces
+- для конкретного модуля прокинуть конфиг
+  import: [... ConfigModule.forFeature({
+    load: [<Конфиг для это модуля>]
+  })]
+   Теперь нам доступны глобальные переменные и
+   переменные для этого пространства имен
+
+в курсе тоже есть
+MongoDb - mongoose 75 -  80

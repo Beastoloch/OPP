@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  db:
+    image: postgres
+    container_name: pg-nest-js
+    restart: always
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: rasem0n
+      POSTGRES_DB: postgre-nest-fund
+      POSTGRES_PASSWORD: 123456
+
